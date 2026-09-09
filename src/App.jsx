@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Landing from "./pages/landing";
+// Ubah "landing" menjadi "Landing" agar konsisten (PascalCase)
+import Landing from "./pages/Landing"; 
 import Birthday from "./pages/Birthday";
 import Quiz from "./pages/Quiz";
 import EighteenThings from "./pages/EighteenThings";
@@ -21,7 +22,7 @@ export default function App() {
       <Route path="/playlist" element={<Playlist />} />
       <Route path="/polaroid" element={<PolaroidWall />} />
       
-      {/* Fallback route */}
+      {/* Fallback route (jika URL salah) */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
